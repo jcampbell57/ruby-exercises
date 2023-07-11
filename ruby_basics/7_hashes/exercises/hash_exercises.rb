@@ -2,15 +2,12 @@ def create_favorite_hash(color, number)
   # return a hash with the following key/value pairs:
   # key of color (as a symbol) with value of the color argument
   # key of number (as a symbol) with the value of the number argument
-  new_hash = { 
-    color: color, 
-    number: number 
-  }
+  { color: color, number: number }
 end
 
 def favorite_color(favorite_list)
   # return the value of the color key
-  favorite_list[:color]
+  favorite_list.fetch(:color, nil)
 end
 
 def favorite_number(favorite_list)

@@ -5,7 +5,7 @@ end
 
 def concatenate(string)
   # use concatenation to format the result to be "Hello <string>!"
-  "Hello #{string}!" 
+  "Hello " << string << "!"
 end
 
 def substrings(word)
@@ -45,5 +45,5 @@ end
 
 def space_remover(string)
   # remove all the spaces in the string using gsub
-  string.gsub(" ", "")
+  string.delete(" ")
 end
